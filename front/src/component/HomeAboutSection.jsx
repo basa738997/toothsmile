@@ -1,7 +1,7 @@
 import React from 'react';
 import 'tailwindcss/tailwind.css';
 import { motion } from 'framer-motion';
-import g1 from '../assets/Images/Dentist.png';
+import g1 from '../assets/clinic.jpeg';
 
 const HomeAboutSection = () => {
   return (
@@ -17,7 +17,7 @@ const HomeAboutSection = () => {
           <img
             src={g1}
             alt="Dr Harshita Patel"
-            className="rounded-xl shadow-md object-cover w-full h-auto max-h-[400px]"
+            className="rounded-xl shadow-md object-cover w-full h-auto max-h-[500px]"
             data-aos="zoom-in"
           />
         </motion.div>

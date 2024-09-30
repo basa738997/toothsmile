@@ -43,11 +43,11 @@ const Header = () => {
   }, [lastScrollY]);
 
   return (
-    <Disclosure as="nav" className={`bg-white text-black px-2 fixed w-full z-50 transition-transform duration-300 ${showHeader ? 'transform translate-y-0' : 'transform -translate-y-full'}`}>
+    <Disclosure as="nav" className={`bg-white text-black px-2 fixed w-screen z-50 transition-transform duration-300 ${showHeader ? 'transform translate-y-0' : 'transform -translate-y-full'}`}>
       {({ open }) => (
         <>
           <div className="mx-auto max-w-7xl px-2 md:px-6 lg:px-8">
-            <div className="relative flex h-24 items-center justify-between">
+            <div className="relative flex h-24 items-center justify-evenly">
               <div className="flex-1 flex items-center justify-between md:items-stretch md:justify-start">
                 <div className="flex-shrink-0">
                   <a href="/">
@@ -89,7 +89,7 @@ const Header = () => {
           </div>
 
           <Disclosure.Panel className="lg:hidden w-full bg-white">
-            <div className="space-y-1 px-2 pb-3 pt-2">
+            <div className="space-y-1 px-2 pb-3 pt-2" data-aos="fade-down">
               {navigation.map((item) => (
                 <Disclosure.Button
                   key={item.name}
@@ -97,8 +97,8 @@ const Header = () => {
                   to={item.href}
                   className={({ isActive }) =>
                     classNames(
-                      isActive ? 'bg-[#3E2015] text-white' : 'text-black hover:bg-[#7c422d] hover:text-white',
-                      'block rounded-md px-3 py-2 text-base font-medium'
+                      isActive ? 'bg-[#3E2015] text-white' : 'text-[#3e2015] hover:bg-[#F7EAD0] hover:text-[#F7EAD0]',
+                      'block rounded-md px-3 py-1 text-base font-medium'
                     )
                   }
                   aria-current={({ isActive }) => (isActive ? 'page' : undefined)}

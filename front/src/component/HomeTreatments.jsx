@@ -4,28 +4,29 @@ import { FaTooth, FaTools, FaSmileBeam } from "react-icons/fa"; // Icons for den
 
 const treatments = [
   {
+    title: "Smile Designing",
+    icon: <FaSmileBeam className="text-6xl text-[#3e2015]" />,
+    description:
+      "Smile Designing focuses on enhancing the appearance of your smile with customized dental treatments to your unique facial features.",
+  },
+  {
+    title: "RCT (Root Canal Treatment)",
+    icon: <FaTools className="text-6xl text-[#3e2015]" />,
+    description:
+      "Root Canal Treatment helps to repair and improve the appearance of your teeth and prevent cavities.",
+  },
+  {
     title: "Dental Implants",
     icon: <FaTooth className="text-6xl text-[#3e2015]" />,
     description:
       "Dental implants are a permanent solution to missing teeth, providing the function and appearance of natural teeth.",
-  },
-  {
-    title: "RGT (Regenerative Gum Treatment)",
-    icon: <FaTools className="text-6xl text-[#3e2015]" />,
-    description:
-      "Regenerative Gum Treatment helps to repair and regenerate gum tissue lost due to periodontal disease, promoting healthier gums.",
-  },
-  {
-    title: "Smile Designing",
-    icon: <FaSmileBeam className="text-6xl text-[#3e2015]" />,
-    description:
-      "Smile Designing focuses on enhancing the appearance of your smile with customized dental treatments tailored to your unique facial features.",
-  },
+  }
+  
 ];
 
 const DentalTreatments = () => {
   return (
-    <section className="container mx-auto px-6 py-12 bg-[#F7EAD0]">
+    <section className="container w-screen mx-auto px-6 py-12 bg-[#F7EAD0]">
       <div className="text-center mb-12">
         <h1 className="text-3xl md:text-4xl font-serif font-extrabold text-[#3e2015] mb-4">
           Our Dental Treatments

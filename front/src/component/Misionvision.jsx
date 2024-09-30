@@ -25,7 +25,7 @@ const sections = [
 
 const MissionVisionValues = () => {
   return (
-    <section className="container mx-auto px-6 py-8 bg-[#F7EAD0]">
+    <section className="container w-screen mx-auto px-6 py-8 bg-[#F7EAD0]">
       <div className="text-center mb-12">
         <h1 className="text-3xl md:text-4xl font-serif font-extrabold text-[#3e2015] mb-4">
           Mission, Vision & Values

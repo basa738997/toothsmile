@@ -40,7 +40,7 @@ const ReviewForm = ({ onReviewSubmitted }) => {
     };
   
     try {
-      const response = await axios.post("http://localhost:5008/api/v1/review/create", data);
+      const response = await axios.post("http://localhost:5009/api/v1/review/create", data);
       if (response.status === 201) {
         setSubmitted(true);
         onReviewSubmitted(response.data.review); // Call parent function to add the review

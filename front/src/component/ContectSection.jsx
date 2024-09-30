@@ -1,93 +1,3 @@
-// import React from 'react';
-// import { motion } from 'framer-motion';
-
-// const ContactSection = () => {
-//   const containerVariants = {
-//     hidden: { opacity: 0, y: 20 },
-//     visible: { opacity: 1, y: 0 },
-//   };
-
-//   return (
-//     <motion.div
-//       id="contact"
-//       className="bg-[#F7EAD0] py-8"
-//       initial="hidden"
-//       animate="visible"
-//       variants={containerVariants}
-//       transition={{ duration: 0.5 }}
-//     >
-//       <div className="container mx-auto px-4">
-//         <div className="text-center mb-12">
-//           <h2 className="text-4xl text-[#3e2015] font-bold font-serif">
-//             Get In Touch
-//           </h2>
-//         </div>
-//         <div className="flex flex-col lg:flex-row gap-8">
-//           <div className="lg:w-1/2">
-//             <iframe
-//               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3719.643511590662!2d81.32004527520218!3d21.206315981656637!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2500e57f0f523a81%3A0x18442a0713019333!2sDr%20Tooth%20Smile%20Clinic%20%7C%20Smile%20designing%20%7C%20Teeth%20whitening%20%7C%20Implant%20%7C%20RCT%20%7C%20Crown%20%7C%20dental%20clinic%20%7C%20doctor%20%7C%20bhilai!5e0!3m2!1sen!2sin!4v1726914200611!5m2!1sen!2sin"
-//               width="100%"
-//               height="420"
-//               className="rounded-lg shadow-lg border-0"
-//               allowFullScreen
-//               loading="lazy"
-//               referrerPolicy="no-referrer-when-downgrade"
-//             ></iframe>
-//           </div>
-//           <div className="lg:w-1/2 flex flex-col space-y-4">
-//             <input
-//               className="form-textarea px-4 py-3 border border-[#3e2015] rounded-lg shadow-sm focus:border-[#3e2015] transition-all"
-//               type="text"
-//               placeholder="Enter Patient Name"
-//             />
-//             <input
-//               minLength="10"
-//               maxLength="10"
-//               className="form-textarea px-4 py-3 border border-[#3e2015] rounded-lg shadow-sm focus:border-[#3e2015] transition-all"
-//               type="text"
-//               placeholder="Enter Patient Phone Number"
-//             />
-//             <input
-//               className="form-textarea px-4 py-3 border border-[#3e2015] rounded-lg shadow-sm focus:border-[#3e2015] transition-all"
-//               type="email"
-//               placeholder="Enter Email ID"
-//             />
-//             <input
-//               maxLength="250"
-//               className="form-textarea px-4 py-3 border border-[#3e2015] rounded-lg shadow-sm focus:border-[#3e2015] transition-all"
-//               type="text"
-//               placeholder="City"
-//             />
-//             <textarea
-//               rows="2"
-//               className="form-textarea px-4 py-3 border border-[#3e2015] rounded-lg shadow-sm focus:border-[#3e2015] transition-all"
-//               placeholder="Type Your Message.."
-//             ></textarea>
-//             <div className="text-center">
-//               <button
-//                 type="submit"
-//                 className="bg-[#3e2015] text-[#F7EAD0] px-6 py-3 rounded-lg hover:scale-95 transition-colors transform hover:translate-y-[-2px] shadow-md"
-//               >
-//                 Send Message
-//               </button>
-//             </div>
-//           </div>
-//         </div>
-//       </div>
-//     </motion.div>
-//   );
-// };
-
-// export default ContactSection;
-
-
-
-
-
-
-
-
-
 import React, { useEffect, useState } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -121,7 +31,7 @@ const ContactMerge = () => {
     setSuccessMessage(''); // Reset success message
 
     try {
-      const response = await axios.post('http://localhost:5008/api/v1/mail/send-mail', formData);
+      const response = await axios.post('http://localhost:5009/api/v1/mail/send-mail', formData);
       // Handle success response
       console.log('Message sent:', response.data);
       setSuccessMessage('Message sent successfully!'); // Set success message
@@ -137,7 +47,7 @@ const ContactMerge = () => {
   };
 
   return (
-    <div id="contact" className="bg-[#F7EAD0] font-serif py-12 px-4">
+    <div id="contact" className="bg-[#F7EAD0] w-screen font-serif py-12 px-4">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-12" data-aos="fade-up">
           <h2 className="text-4xl font-bold font-serif text-[#3e2015] mb-4">Get in Touch</h2>

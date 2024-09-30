@@ -6,14 +6,14 @@ export const mailsender = (req, res) => {
         host: "smtp.gmail.com",
         port: 465,
         auth: {
-            user: "mbasant805@gmail.com",
-            pass: "nafpigdbuqhsmhgy",
+            user: "drharshitapatel06@gmail.com",
+            pass: "greoyzfkdsfaoeqw",
         },
     });
 
     const senderMailOptions = {
-        from: "Dr Tooth Smiling Clinic<mbasant805@gmail.com>",
-        to: "mbasant805@gmail.com",
+        from: "Dr Tooth Smiling Clinic<drharshitapatel06@gmail.com>",
+        to: "drharshitapatel06@gmail.com",
         subject: "New Inquiry Request Received from your website",
         html: `
             <h1 style="color: green;">New service request received.</h1>
@@ -31,7 +31,7 @@ export const mailsender = (req, res) => {
     };
 
     const recipientMailOptions = {
-        from: "Dr Tooth Smiling Clinic<mbasant805@gmail.com>",
+        from: "Dr Tooth Smiling Clinic<drharshitapatel06@gmail.com>",
         to: req.body.email,
         subject: "Contact Request Confirmation from Dr Tooth Smiling Clinic",
         html: `

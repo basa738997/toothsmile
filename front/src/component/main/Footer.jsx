@@ -7,7 +7,7 @@ import logo from '../../assets/logo.png';
 import bgs from "../../assets/bgs.jpg"
 const Footer = () => {
   return (
-    <footer className="bg-zinc-900 text-black  py-6 "   style={{
+    <footer className="bg-zinc-900 text-black w-screen py-6 "   style={{
       backgroundImage: `url(${bgs})`,
       fontFamily:"roboto slab",
       backgroundSize: 'cover',
@@ -28,7 +28,7 @@ const Footer = () => {
           fontFamily:"Fira Sans",
           fontWeight:"bolder"
         }}>
-          <h4 className="text-lg font-bold mb-4">Quick Links</h4>
+          <h3 className="text-lg font-bold mb-4">Quick Links</h3>
           <ul className="space-y-2">
             <li><a href="/" className="hover:underline hover:text-gray-400 hover:font-extrabold transition-colors duration-300">Home</a></li>
             <li><a href="/services" className="hover:underline hover:text-gray-400 transition-colors duration-300">Treatments</a></li>
@@ -41,7 +41,7 @@ const Footer = () => {
 
         {/* Social Media Links */}
         <div className="lg:w-1/3">
-          <h4 className="text-lg font-bold mb-4">Follow Us</h4>
+          <h3 className="text-lg font-bold mb-4">Follow Us</h3>
           <div className="flex justify-center lg:justify-start space-x-4">
             <a href="https://www.facebook.com/people/DrTooth_smileclinic/100092447703506/" className="text-blue-600 hover:text-blue-400 transition-colors duration-300"><FaFacebook size={28} /></a>
             <a href="https://g.co/kgs/6Jekm4N" className="text-blue-500 hover:text-blue-500 bg-white p-0 rounded-full transition-colors duration-300"><FcGoogle size={28} /></a>
@@ -54,7 +54,7 @@ const Footer = () => {
         <div className="lg:w-1/3" style={{
           fontFamily:"playpen Sans"
         }}>
-          <h4 className="text-lg font-bold mb-4">Contact Info</h4>
+          <h3 className="text-lg font-bold mb-4">Contact Info</h3>
           <p className="mb-2">
             <span className="font-semibold">Mobile :</span> +91 8103004462
           </p>

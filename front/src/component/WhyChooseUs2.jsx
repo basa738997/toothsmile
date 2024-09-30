@@ -5,14 +5,14 @@ import why from '../assets/Images/Whychoose2.png';
 const WhyChooseUs = () => {
   return (
     // <div className="relative bg-[#F7EAD0] py-8">
-    <div className="relative bg-[#F7EAD0] py-8">
+    <div className="relative w-screen bg-[#F7EAD0] py-8">
       <div className="relative max-w-7xl mx-auto flex flex-col md:flex-row items-center md:space-x-8">
         {/* Left Side - Text Section */}
-        <div className="md:w-1/2 bg-white p-6 rounded-xl shadow-lg space-y-6" data-aos="zoom-out-up" style={{fontFamily:"roboto slab"}}>
-          <h1 className="text-4xl font-bold text-[#3e2015]" data-aos="zoom-out-up" style={{fontFamily:"roboto slab"}}>
+        <div className="md:w-1/2 bg-white p-6 rounded-xl shadow-lg space-y-6" data-aos="zoom-in-up" style={{fontFamily:"roboto slab"}}>
+          <h1 className="text-4xl font-bold text-[#3e2015]" data-aos="zoom-in-up" style={{fontFamily:"roboto slab"}}>
             Why choose us?
           </h1>
-          <p className="text-gray-600 text-lg" data-aos="zoom-out-down">
+          <p className="text-gray-600 text-lg" data-aos="zoom-in-down">
             Discover why we're the best in healthcare.
           </p>
           <p className="text-gray-600">
