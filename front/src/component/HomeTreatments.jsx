@@ -44,7 +44,7 @@ const DentalTreatments = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: index * 0.3 }}
           >
-            <div className="flex items-center justify-center mb-6" data-aos="flip-left"
+            <div className="flex items-center justify-center mb-6" data-aos="zoom-in"
      data-aos-easing="ease-out-cubic"
      data-aos-duration="2000">
               <div className="bg-[#F7EAD0] p-4 rounded-full">

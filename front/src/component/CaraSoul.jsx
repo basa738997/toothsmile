@@ -5,13 +5,14 @@ import A1 from '../assets/Images/A1.png';
 import A2 from '../assets/Images/A2.png';
 import A3 from '../assets/Images/A3.png';
 import cara from '../assets/Images/CaraSoul1.jpg'
-// import cara2 from '../assets/Images/Carasoul2.jpg'
+import cara2 from '../assets/Images/Carasoul3.jpg'
 
 import { motion } from 'framer-motion';
 
 const CaraSoul = () => {
   const slides = [
     { id: 0, srcimg: cara, alt: '', title: '', utitle: " ", subtitle: " ", meta: " "},
+    {id:1, srcimg: cara2, alt: '', title: '', utitle: " ", subtitle: " ", meta: " "},
     // { id: 1, srcimg: cara, alt: '', title: '', utitle: "", subtitle: '', meta: '' }
     // { id: 2, srcimg: A1, alt: 'Expert Dental Care', title: 'Dr Tooth Smile Clinic', utitle: "Welcome to", subtitle: "Advanced dental care", meta: " Smile designing | Teeth whitening | Implant | RCT | Crown | dental clinic"},
     // { id: 3, srcimg: A1, alt: 'Holistic Healing', title: 'Dr. Harshita Patel', utitle: "", subtitle: 'Expert Dental Care', meta: 'Smile designing | Teeth whitening | Implant | RCT | Crown | dental clinic | doctor | bhilai' },

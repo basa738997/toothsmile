@@ -64,7 +64,7 @@ const treatments = [
 
 const TreatmentsSection = () => {
   useEffect(() => {
-    AOS.init({ duration: 800 });
+    AOS.init({ duration: 500 });
   }, []);
 
   return (
@@ -78,7 +78,7 @@ const TreatmentsSection = () => {
             key={index}
             className="bg-white rounded-lg shadow-lg hover:shadow-xl p-6 transition-transform duration-300 hover:scale-105"
             style={{borderTopRightRadius: '30px', borderTopLeftRadius: '0px', borderBottomLeftRadius: '30px', borderBottomRightRadius: '0px'}}
-            data-aos="flip-left"
+            data-aos="fade-up"
             data-aos-easing="ease-out-cubic"
             data-aos-duration="2000"
           >

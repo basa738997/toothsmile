@@ -29,13 +29,14 @@ const Footer = () => {
           fontWeight:"bolder"
         }}>
           <h3 className="text-lg font-bold mb-4">Quick Links</h3>
-          <ul className="space-y-2">
+          <ul className="space-y-1.5">
             <li><a href="/" className="hover:underline hover:text-gray-400 hover:font-extrabold transition-colors duration-300">Home</a></li>
-            <li><a href="/services" className="hover:underline hover:text-gray-400 transition-colors duration-300">Treatments</a></li>
-            <li><a href="/appointments" className="hover:underline hover:text-gray-400 transition-colors duration-300">Book an Appointment</a></li>
-            <li><a href="/about" className="hover:underline hover:text-gray-400 transition-colors duration-300">About Us</a></li>
-            <li><a href="/gallery" className="hover:underline hover:text-gray-400 transition-colors duration-300">Gallery</a></li>
-            <li><a href="/contact" className="hover:underline hover:text-gray-400 transition-colors duration-300">Contact Us</a></li>
+            <li><a href="/About" className="hover:underline hover:text-gray-400 transition-colors duration-300">About Us</a></li>
+            <li><a href="/Services" className="hover:underline hover:text-gray-400 transition-colors duration-300">Treatments</a></li>
+            <li><a href="/testomonials" className="hover:underline hover:text-gray-400 transition-colors duration-300">Testomonials</a></li>
+            <li><a href="/result" className="hover:underline hover:text-gray-400 transition-colors duration-300">Results</a></li>
+            <li><a href="/Gallery" className="hover:underline hover:text-gray-400 transition-colors duration-300">Gallery</a></li>
+            <li><a href="/Contact" className="hover:underline hover:text-gray-400 transition-colors duration-300">Contact Us</a></li>
           </ul>
         </div>
 
